@@ -1,10 +1,5 @@
 name: C/C++ CI
 
-env:
- QT_VERSION: "5.12.7"
- MINGW_VERSION: "win32_mingw73"
- MINGW_PATH: "mingw73_32"
-
 
 
 on:
@@ -19,9 +14,7 @@ on:
 
 jobs:
   build:
-
     runs-on: windows-latest
-
     steps:
     - name: install correct version of mingw
       run: choco uninstall mingw --force ; choco uninstall strawberryperl --force;
