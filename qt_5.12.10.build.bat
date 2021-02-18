@@ -1,5 +1,7 @@
 cinst Wget;
-choco install archiver;
+choco install activeperl
+choco install archiver
+choco install python2
 
 wget https://download.qt.io/archive/qt/5.12/5.12.10/single/qt-everywhere-src-5.12.10.tar.xz
 arc unarchive qt-everywhere-src-5.12.10.tar.xz
