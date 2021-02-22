@@ -11,4 +11,5 @@ cd qt-everywhere-src-5.12.10
 configure.bat  -release -static  -opensource -confirm-license   -ltcg -no-pch -optimize-size -opengl desktop -platform win32-g++ -prefix "D:\\a\\qt_static\\qt_static\\qt-everywhere-src-5.12.10\\..\\qt51210_static\\" -skip webengine -nomake tools -nomake tests -nomake examples 
 cat config.log
 REM make ;
+
 mingw32-make
