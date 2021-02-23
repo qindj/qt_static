@@ -29,6 +29,10 @@ jobs:
            path-type: minimal
 
     - uses: actions/checkout@v2
+    
+    - name: download qt
+      run: ./qt.download.bat 5.9 5.9.9    
+    
     - name: configure-qt
       shell: msys2 {0}
       run: ./qt.config.bat 5.9 5.9.9
