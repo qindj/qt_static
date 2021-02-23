@@ -1,6 +1,6 @@
-export BAT_FILE_NAME=%0
-export QT_VER_FRONT=%1
-export QT_VER_ALL=%2
+set BAT_FILE_NAME=%0
+set QT_VER_FRONT=%1
+set QT_VER_ALL=%2
 cinst Wget;
 choco install activeperl
 choco install archiver
