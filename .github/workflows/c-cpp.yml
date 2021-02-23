@@ -26,10 +26,14 @@ jobs:
       uses:  msys2/setup-msys2@v2
       with: 
            msystem: MINGW32
-           
+           path-type: minimal
 
     - uses: actions/checkout@v2
     - name: configure-qt
+      shell: msys2 {0}
       run: ./qt.config.bat 5.9 5.9.9
     - name: make-qt
+      shell: msys2 {0}
       run: ./qt.make.bat 5.9 5.9.9
+
+
