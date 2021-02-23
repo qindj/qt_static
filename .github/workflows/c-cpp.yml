@@ -22,4 +22,6 @@ jobs:
 
     - uses: actions/checkout@v2
     - name: configure
-      run: ./qt_5.12.10.build.bat
+      run: ./qt_5.12.10.config.bat
+    - name: build
+      run: ./qt_5.12.10.make.bat
