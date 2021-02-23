@@ -17,6 +17,8 @@ jobs:
     env:
        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     steps:
+    - uses: actions/checkout@v2
+    
     - name: uninstall uncorrect version of mingw
       run: | 
          choco uninstall mingw --force
@@ -27,9 +29,8 @@ jobs:
       with: 
            msystem: MINGW32
            path-type: minimal
+           install: git base-devel gcc mingw-w64-i686-make
 
-    - uses: actions/checkout@v2
-    
     - name: download qt
       run: ./qt.download.bat 5.9 5.9.9    
     
