@@ -29,7 +29,7 @@ jobs:
       with: 
            msystem: MINGW32
            path-type: minimal
-           install: git base-devel mingw-w64-i686-toolchain
+           install: git msys2-devel base-devel mingw-w64-i686-toolchain msys2-runtime-devel
 
     - name: download qt
       run: ./qt.download.bat 5.9 5.9.9    
