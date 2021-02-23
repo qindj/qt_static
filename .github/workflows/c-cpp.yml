@@ -16,7 +16,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: install correct version of mingw
-      run | 
+      run: | 
          choco uninstall mingw --force
          choco uninstall strawberryperl --force
     
