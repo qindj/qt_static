@@ -6,8 +6,11 @@ choco install activeperl
 choco install archiver
 choco install python2
 
+wget https://download.qt.io/archive/qt/%QT_VER_FRONT%/%QT_VER_ALL%/single/qt-everywhere-opensource-src-%QT_VER_ALL%.tar.xz
 wget https://download.qt.io/archive/qt/%QT_VER_FRONT%/%QT_VER_ALL%/single/qt-everywhere-src-%QT_VER_ALL%.tar.xz
 arc unarchive qt-everywhere-src-%QT_VER_ALL%.tar.xz
+arc unarchive qt-everywhere-opensource-src-%QT_VER_ALL%.tar.xz
+
 REM #tar -xvJf qt-everywhere-src-%QT_VER_ALL%.tar.xz
 ls
 cd qt-everywhere-src-%QT_VER_ALL%
