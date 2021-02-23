@@ -15,7 +15,12 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-    - uses: msys2/setup-msys2@v2
+    - name install correct version of mingw
+      run | 
+         choco uninstall mingw --force
+         choco uninstall strawberryperl --force
+    
+    - uses: numworks/setup-msys2@v1
       with: 
            msystem: MINGW32
            
