@@ -23,13 +23,13 @@ jobs:
          choco uninstall strawberryperl --force
     
     - name: install correct version of mingw
-      uses: numworks/setup-msys2@v1
+      uses:  msys2/setup-msys2@v2
       with: 
            msystem: MINGW32
            
 
     - uses: actions/checkout@v2
-    - name: configure
+    - name: configure-qt
       run: ./qt.config.bat 5.9 5.9.9
-    - name: build
+    - name: make-qt
       run: ./qt.make.bat 5.9 5.9.9
