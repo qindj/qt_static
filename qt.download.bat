@@ -12,3 +12,4 @@ mv qt-everywhere-opensource-src-%QT_VER_ALL%.tar.xz qt-everywhere-src-%QT_VER_AL
 arc unarchive qt-everywhere-src-%QT_VER_ALL%.tar.xz
 
 mv qt-everywhere-opensource-src-%QT_VER_ALL% qt-everywhere-src-%QT_VER_ALL%
+ 
