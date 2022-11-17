@@ -32,13 +32,13 @@ jobs:
            install: msys2-devel base-devel mingw-w64-i686-toolchain msys2-runtime-devel
 
     - name: download qt
-      run: ./qt.download.bat 5.9 5.9.9    
+      run: ./qt.download.bat 6.4 6.4.1    
     
     - name: configure-qt
       shell: msys2 {0}
-      run: ./qt.config.bat 5.9 5.9.9
+      run: ./qt.config.bat 6.4 6.4.1
     - name: make-qt
       shell: msys2 {0}
-      run: ./qt.make.bat 5.9 5.9.9
+      run: ./qt.make.bat 6.4 6.4.1
 
 
